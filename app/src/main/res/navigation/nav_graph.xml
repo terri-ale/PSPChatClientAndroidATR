@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.pspchatclientandroidatr.view.fragment.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_globalChatFragment"
+            app:destination="@id/globalChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/globalChatFragment"
+        android:name="com.example.pspchatclientandroidatr.view.fragment.GlobalChatFragment"
+        android:label="fragment_global_chat"
+        tools:layout="@layout/fragment_global_chat" >
+        <action
+            android:id="@+id/action_globalChatFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.pspchatclientandroidatr.view.fragment.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" >
+        <action
+            android:id="@+id/action_userListFragment_to_privateChatFragment"
+            app:destination="@id/privateChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privateChatFragment"
+        android:name="com.example.pspchatclientandroidatr.view.fragment.PrivateChatFragment"
+        android:label="fragment_private_chat"
+        tools:layout="@layout/fragment_private_chat" />
+</navigation>

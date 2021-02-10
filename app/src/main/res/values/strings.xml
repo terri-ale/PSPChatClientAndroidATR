@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PSPChatClientAndroidATR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_username">Usuario</string>
+    <string name="bt_join">Unirse</string>
+    <string name="error_empty_field">Campo vacío</string>
+    <string name="error_invalid_characters">Caracteres inválidos</string>
+    <string name="error_join_failed">No se pudo conectar al servidor.</string>
+    <string name="progress_loading">Cargando...</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="title_global_chat">Chat global</string>
+    <string name="hint_message">Mensaje</string>
+    <string name="title_users">Usuarios conectados</string>
+</resources>
